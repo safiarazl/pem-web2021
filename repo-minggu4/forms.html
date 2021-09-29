@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Meet Stars</title>
+    <style>
+        .center {text-align: center;}
+    </style>
+</head>
+<body>
+    <header><h1>Form Meet Stars</h1></header>
+        <form action="proses.php" method="POST" name="fmeetstars">
+            <table>
+            <caption>Personal information</caption>
+            <tr>
+                <td><label for="ffullname">Full name</label></td>
+                <td>:</td>
+                <td><input type="text" id="ffullname" name="ffullname" placeholder="John Doe" required></td>
+            </tr>
+            <tr>
+                <td><label for="fcontactinfo">Contact info</label></td>
+                <td>:</td>
+                <td><input type="tel" id="fcontactinfo" name="fcontactinfo" placeholder="0123-4567-8910" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required></td>
+            </tr>
+            <tr>
+                <td><label for="flineid">Line ID</label></td>
+                <td>:</td>
+                <td><input type="text" id="flineid" name="flineid" placeholder="John12" autocomplete="off" required></td>
+            </tr>
+            <tr>
+                <td><label for="fdateofbirth">Date of Birth</label></td>
+                <td>:</td>
+                <td><input type="date" id="fdateofbirth" name="fdateofbirth" required></td>
+            </tr>
+            <tr>
+                <td><label for="fgender">Gender</label></td>
+                <td>:</td>
+                <td>
+                    <select name="fgender" id="fgender" required>
+                        <option value="">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="center">Option and Agreement</td>
+            </tr>
+            <tr>
+                <td><label for="fstars">Select Stars</label></td>
+                <td>:</td>
+                <td>
+                    <select name="fstars" id="fstars" required>
+                        <option value="">Actors and Actress</option>
+                        <option value="NIKI">NIKI</option>
+                        <option value="JOJI">JOJI</option>
+                        <option value="Rich Brian">Rich Brian</option>
+                        <option value="Stephanie Poetri">Stephanie Poetri</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="3"><label for="fpersonalinfo">Personal information</label></td>
+                <td>:</td>
+                <td>
+                    <select name="fpersonalinfo" id="fpersonalinfo" required>
+                        <option value="">Disagree</option>
+                        <option value="Agree">Agree</option>
+                    </select>
+                </td>
+            </tr>
+            </table>
+            <input type="submit" name="fsubmit" placeholder="SUBMIT">
+        </form>
+</body>
+</html>
